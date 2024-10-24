@@ -1,0 +1,15 @@
+{
+  "name": "tattoo-assistant",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "build": "concurrently \"npm run build-server\" \"npm run build-client\"",
+    "build-server": "cd server && npm run build",
+    "build-client": "cd client && npm run build"
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
